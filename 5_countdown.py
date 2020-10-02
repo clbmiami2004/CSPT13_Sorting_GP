@@ -9,6 +9,16 @@ def countdown_i(n):
     while (n > 0): # condition and label
         print(n) # body
         n -= 1 # decrement
+        
+        
+def countdown(n):
+    # condition (base case)
+    if n == 0:
+        return
+    # body
+    print(n)
+    # decrement
+    countdown(n - 1)
 
-
-countdown_i(n)
+#countdown_i(n)
+countdown(n)
