@@ -1,3 +1,6 @@
+import sys
+# sys.setrecursionlimit(1000020) # This is to override the limit for the recursion amount.
+
 """
 One of the most straightforward problems we can solve recursively is to print every number from n down to zero in succession.
 We can do that simply by writing a function that prints n, then calls itself for n-1:
@@ -9,6 +12,16 @@ def countdown_i(n):
     while (n > 0): # condition and label
         print(n) # body
         n -= 1 # decrement
+        
+        
+def countdown(n):
+    # condition (base case)
+    if n == 0:
+        return
+    # body
+    print(n)
+    # decrement
+    countdown(n - 1)
 
-
-countdown_i(n)
+#countdown_i(n)
+countdown(n)

@@ -14,3 +14,13 @@ Eventually, we arrive at the 0th and 1st numbers, which are defined as 0 and 1. 
 with an arbitrary or defined answer, this is the base case.
 We can use this understanding to plan our approach via pseudocode:
 """
+
+def fibm(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    
+    return fibm(n - 1) + fibm(n - 2)
+
+print(fibm(6))
