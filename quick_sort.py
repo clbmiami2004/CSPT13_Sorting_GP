@@ -38,4 +38,34 @@ def quicksort(data):
 
 
 print(quicksort([5, 9, 3, 7, 2, 8, 1, 6]))
+
+
+
+# def numberSigningSum(n):
+#     new_n = [int(a) for a in str(n)]
+#     value = 0
+#     count = 0
+#     steps = ""
+#     for i in new_n:
+#         if count % 2 == 0:
+#             value += i
+#             steps += " + " + str(i)
+#         else:
+#             value -= i
+#             steps += " - " + str(i)
+#         count += 1
+#     print(f"{steps[3:]} = {value}")
+#     return new_n
+
+
+# # Test case
+# n = 52134
+# print(numberSigningSum(n))
+# # should return 5 - 2 + 1 - 3 + 4 = 5
+
+
+# # Test case 2
+# n = 54481
+# print(numberSigningSum(n))
+# # should return 5 - 4 + 4 - 8 + 1 = -2
     
