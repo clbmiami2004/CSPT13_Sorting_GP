@@ -1,3 +1,6 @@
+import sys
+# sys.setrecursionlimit(1000020) # This is to override the limit for the recursion amount.
+
 """
 One of the most straightforward problems we can solve recursively is to print every number from n down to zero in succession.
 We can do that simply by writing a function that prints n, then calls itself for n-1:
